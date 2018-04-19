@@ -1,6 +1,6 @@
 # Hey-baby [Web Site]
 
-**Version 1.0.0**
+**Version 1.0**
 
 This will be the Web site Repository, for our Graduation Project,
 

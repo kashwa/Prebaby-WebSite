@@ -10,7 +10,7 @@ Hey Baby is a website for Our Team graduation project, it is mainly designed to 
 
 ## Goodies
 
-Hey Baby website is made with ❤️ Laravel.
+Hey Baby website is made with ❤️ in Laravel.
 There is a mobile app on Android platform which will be announced soon. Stay Tuned!
 
 ## License & copyright

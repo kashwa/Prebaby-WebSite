@@ -36,7 +36,7 @@
       <p><a href="#work" class="w3-button w3-light-blue"><i class="fa fa-th" > </i> View Our Works</a></p>
     </div>
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="/media/aabed/FUN/Mother.jpg" alt="Buildings" width="700" height="394">
+    <img class="w3-image w3-round-large" src="{{url('/')}}/images/Mother.jpg" alt="Buildings" width="700" height="394">
     </div>
   </div>
 </div>
@@ -158,7 +158,7 @@
 <div class="w3-container" style="padding:128px 16px" id="work">
   <h3 class="w3-center">OUR APP</h3>
   <p class="w3-center w3-large">What we've done to care for you</p>
-
+{{-- place screenshots here --}}
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l3 m6">
       <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
@@ -209,7 +209,7 @@
     </div>
     <div class="w3-col m6">
 	    <a href="https://play.google.com/store?hl=en" target="_blank">
-			<img src="/media/aabed/FUN/gplay.png" width="600" height="228">
+			<img src="{{url('/')}}/images/gplay.png" width="600" height="228">
 		</a>
     </div>
   </div>
@@ -273,7 +273,7 @@
       <br>
     </div>
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="/media/aabed/FUN/Pics2/sleep.jpg" alt="Buildings" width="700" height="394">
+      <img class="w3-image w3-round-large" src="{{url('/')}}/images/sleep.jpg" alt="Buildings" width="700" height="394">
     </div>
   </div>
 </div>

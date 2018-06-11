@@ -16,7 +16,7 @@ body, html {
 .bgimg-1 {
     background-position: center;
     background-size: cover;
-    background-image: url("/media/aabed/FUN/Pics/follow.jpg");
+    background-image: url("{{url('/')}}/images/follow.jpg");
     min-height: 100%;
 }
 .w3-bar .w3-button {

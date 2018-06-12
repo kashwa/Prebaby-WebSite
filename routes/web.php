@@ -14,3 +14,17 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// route to trimesters pages'
+// First - Second - Third.
+Route::get('first', function() {
+    return view('firstArticles');
+});
+
+Route::get('second', function() {
+    return view('secondArticles');
+});
+
+Route::get('third', function() {
+    return view('thirdArticles');
+});

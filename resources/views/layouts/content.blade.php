@@ -269,7 +269,7 @@
     <div class="w3-half">
       <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Minufya, Egypt</p>
       <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: prebaby@yahoo.com</p>
       <br>
     </div>
     <div class="w3-col m6">

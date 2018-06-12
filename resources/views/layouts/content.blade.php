@@ -53,7 +53,7 @@
         <div class="w3-container">
           <h3>Ahmed Elkersh</h3>
           <p class="w3-opacity">Android Developer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p>Team leader and Android developer.</p>
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
@@ -65,7 +65,7 @@
         <div class="w3-container">
           <h3>Ahmed Happa</h3>
           <p class="w3-opacity">Android Developer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p>Member at Android development Team.</p>
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
@@ -76,7 +76,7 @@
         <div class="w3-container">
           <h3>Aabed Kashwa</h3>
           <p class="w3-opacity">Web Developer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p>Web developer at website team.</p>
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
@@ -87,7 +87,7 @@
         <div class="w3-container">
           <h3>Usama Alaa</h3>
           <p class="w3-opacity">Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p>Designer for Mobile app and website.</p>
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
@@ -102,7 +102,7 @@
 	        <div class="w3-container">
 	          <h3>Maiar Sheir</h3>
 	          <p class="w3-opacity">System Analysis</p>
-	          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+	          <p>Database and analysis member.</p>
 	          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
 	        </div>
 	      </div>
@@ -114,7 +114,7 @@
 	        <div class="w3-container">
 	          <h3>Hebatuallah Nasser</h3>
 	          <p class="w3-opacity">Systen flow and Analysis</p>
-	          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+	          <p>System flow, mockups and analysis.</p>
 	          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
 	        </div>
 	      </div>
@@ -126,7 +126,7 @@
 	        <div class="w3-container">
 	          <h3>Sara Sobhy</h3>
 	          <p class="w3-opacity">UI/UX Designer</p>
-	          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+	          <p>UI/UX for mobile app.</p>
 	          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
 	        </div>
 	      </div>

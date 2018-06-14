@@ -47,7 +47,7 @@
                         
                     {{-- this is sidebar --}}
                     {{-- there is a problem in sidebar, must align to top of first article --}}
-                    <div class="w3-col m4" style="margin:0px 750px; background-color: #7cabb7">
+                    <div class="w3-col m4" style="margin:0px 50px; background-color: #7cabb7">
                         <h3>Side Bar</h3>
                         <a href="#">Link 1</a><br>
                         <a href="#">Link 2</a><br>

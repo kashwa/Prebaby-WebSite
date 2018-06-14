@@ -27,7 +27,7 @@ body, html {
 
 
     @include('layouts.navbar')
-    @include('layouts.sidebar')
+    {{-- @include('layouts.sidebar') --}}
 
 
 <!-- Header with full-height image -->

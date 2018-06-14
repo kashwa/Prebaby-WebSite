@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Exceptions;
+namespace Prebaby\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;

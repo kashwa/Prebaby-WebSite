@@ -22,7 +22,6 @@
         height: 100%;
         line-height: 1.8;
     }
-
     .w3-bar .w3-button {
         padding: 16px;
     }
@@ -33,12 +32,12 @@
     <body>
             {{-- Insert some content here --}}
 
-            {{-- TAKE BUILDING FROM CORP LARAVEL PROJECT </GITHUB> --}}
+            {{-- TAKE BUILDING FROM CORP PROJECT </GITHUB> --}}
             
             <div class="w3-container w3-white" style="padding:128px 16px">
 
                 <div class="w3-row-padding">
-                    <div class="w3-col m6 w3-light-grey" style="color: #000">
+                    <div class="w3-col m6 w3-light-grey" name="firstArt" style="margin-bottom: 20px;color: #000">
                         <h2>Article no:1</h2>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
@@ -47,7 +46,8 @@
                         </div>
                         
                     {{-- this is sidebar --}}
-                    <div class="w3-col m3" style="margin-left:350px; background-color: #7cabb7">
+                    {{-- there is a problem in sidebar, must align to top of first article --}}
+                    <div class="w3-col m4" style="margin:0px 750px; background-color: #7cabb7">
                         <h3>Side Bar</h3>
                         <a href="#">Link 1</a><br>
                         <a href="#">Link 2</a><br>

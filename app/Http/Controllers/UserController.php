@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Prebaby\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Requests;
-use App\User;
-use App\Http\Resources\User as UserResource;
+use Prebaby\Http\Requests;
+use Prebaby\User;
+use Prebaby\Http\Resources\User as UserResource;
 
 class UserController extends Controller
 {

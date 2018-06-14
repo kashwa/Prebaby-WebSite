@@ -6,25 +6,27 @@
       @guest
         <a href="{{ route('login') }}" class="w3-bar-item w3-button" style="color:#0f7e9b"><i class="fa fa-user"></i> <strong>Login as admin</strong></a>
         @else
-          <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <ul class="dropdown-menu">
-                                    <li>
+          {{-- <div class="dropdown"> --}}
+                                   {{-- <button class="dropbtn"> {{ Auth::user()->name }}</button>
+                                      <div class="dropdown-content"> --}}
+                                        
+                                        
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Logout
+                                                     document.getElementById('logout-form').submit();"
+                                                     class="w3-bar-item w3-button" style="color:#0f7e9b">
+                                                     <i class="fa fa-sign-out"></i> <strong>Logout</strong>
+                                            
                                         </a>
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
-                                    </li>
-                                </ul>
-                            </li>
+                                      
+                                      
+                                      
+                                      {{-- </div> --}}
+                              {{-- </div> --}}
       @endguest
       <a href="#about" class="w3-bar-item w3-button" style="color:#0f7e9b">ABOUT</a>
       <a href="#team" class="w3-bar-item w3-button" style="color:#0f7e9b"><i class="fa fa-user"></i> TEAM</a>

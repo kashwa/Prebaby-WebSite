@@ -9,7 +9,7 @@
     {{-- navbar --}}
     <div class="w3-top">
         <div class="w3-bar w3-white w3-card" id="myNavbar">
-            <a href="#home" class="w3-bar-item w3-button w3-wide">Hey Baby</a>
+            <a href="#home" class="w3-bar-item w3-button w3-wide">Prebaby</a>
             <!-- Right-sided navbar links -->
             <div class="w3-right w3-hide-small">
             <a href="/" class="w3-bar-item w3-button" style="color:#0f7e9b"><i class="fa fa-home"></i> HOME</a>
@@ -39,7 +39,7 @@
                 <div class="w3-row-padding">
                     <div class="w3-col m6 w3-light-grey" name="firstArt" style="margin-bottom: 20px;color: #000">
                         <h2>Article no:1</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                        <p>Lorem ipsum, dolor sit amet conasdasdasdasdasdasljnadnadncpkaclma[xmc[zmxc[mzxcmzpicmpzsectetur adipisicing elit. Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
@@ -47,7 +47,7 @@
                         
                     {{-- this is sidebar --}}
                     {{-- there is a problem in sidebar, must align to top of first article --}}
-                    <div class="w3-col m4" style="margin:0px 50px; background-color: #7cabb7">
+                    <div class="w3-col m4" style="margin:0px 107px; background-color: #7cabb7">
                         <h3>Side Bar</h3>
                         <a href="#">Link 1</a><br>
                         <a href="#">Link 2</a><br>

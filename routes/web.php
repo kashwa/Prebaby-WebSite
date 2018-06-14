@@ -40,12 +40,13 @@ function() {
     }
 ]);
 
-// Route::any('/logout', [
-// 'as' => 'logout',
-// function() {
-//     return abort(404);
-//     }
-// ]);
+Route::any('/logout', [
+'as' => 'logout',
+function() {
+    auth()->logout();
+    return redirect('/');
+    }
+]);
 
 Route::any('/home', [
 'as' => 'home',

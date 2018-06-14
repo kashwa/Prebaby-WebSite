@@ -3,6 +3,29 @@
     <a href="#home" class="w3-bar-item w3-button w3-wide">Prebaby</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
+      @guest
+        <a href="{{ route('login') }}" class="w3-bar-item w3-button" style="color:#0f7e9b"><i class="fa fa-user"></i> Login as admin</a>
+        @else
+          <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+      @endguest
       <a href="#about" class="w3-bar-item w3-button" style="color:#0f7e9b">ABOUT</a>
       <a href="#team" class="w3-bar-item w3-button" style="color:#0f7e9b"><i class="fa fa-user"></i> TEAM</a>
       <a href="#work" class="w3-bar-item w3-button" style="color:#0f7e9b"><i class="fa fa-android"></i> APP</a>

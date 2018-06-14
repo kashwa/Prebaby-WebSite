@@ -4,7 +4,7 @@
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       @guest
-        <a href="{{ route('login') }}" class="w3-bar-item w3-button" style="color:#0f7e9b"><i class="fa fa-user"></i> Login as admin</a>
+        <a href="{{ route('login') }}" class="w3-bar-item w3-button" style="color:#0f7e9b"><i class="fa fa-user"></i> <strong>Login as admin</strong></a>
         @else
           <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" v-pre>

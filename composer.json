@@ -23,7 +23,7 @@
             "database/factories"
         ],
         "psr-4": {
-            "App\\": "app/"
+            "Prebaby\\": "app/"
         }
     },
     "autoload-dev": {

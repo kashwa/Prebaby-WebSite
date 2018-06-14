@@ -28,3 +28,21 @@ Route::get('second', function() {
 Route::get('third', function() {
     return view('thirdArticles');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::any('/register', [
+'as' => 'login',
+function() {
+    return redirect('/login');
+    }
+]);
+
+Route::any('/logout', [
+'as' => 'login',
+function() {
+    return abort(404);
+    }
+]);

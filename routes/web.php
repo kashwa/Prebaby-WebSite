@@ -31,18 +31,25 @@ Route::get('third', function() {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
 
 Route::any('/register', [
-'as' => 'login',
+'as' => 'register',
 function() {
     return redirect('/login');
     }
 ]);
 
 Route::any('/logout', [
-'as' => 'login',
+'as' => 'logout',
 function() {
     return abort(404);
     }
 ]);
+
+// Route::any('/home', [
+// 'as' => 'home',
+// function() {
+//     return view('welcome');
+//     }
+// ]);

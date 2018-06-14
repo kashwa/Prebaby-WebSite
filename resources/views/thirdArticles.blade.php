@@ -65,30 +65,30 @@
             <div class="w3-container w3-white" style="padding:21px 16px 10px 16px">
 
                 <div class="w3-row-padding">
-                    <div class="w3-col m6 w3-light-grey" style="color: #000">
-                        <h3>New Article</h3>
-                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                        </div>
-                <div class="w3-row-padding">
-                    <div class="w3-col m6 w3-light-grey" style="color: #000; margin: 111px 0px">
-                        <h3>New Article</h3>
-                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                        </div>
-                    
-                </div>
+                        <div class="w3-col m6 w3-light-grey" style="color: #000">
+                            <h3>New Article</h3>
+                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                            </div>
+                    <div class="w3-row-padding">
+                        <div class="w3-col m6 w3-light-grey" style="color: #000; margin: 111px 0px">
+                            <h3>New Article</h3>
+                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                            </div>
+                        
+                    </div>
 
+                </div>
             </div>
-            
 
         
 

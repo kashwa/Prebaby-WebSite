@@ -40,16 +40,16 @@ function() {
     }
 ]);
 
-Route::any('/logout', [
-'as' => 'logout',
-function() {
-    return abort(404);
-    }
-]);
-
-// Route::any('/home', [
-// 'as' => 'home',
+// Route::any('/logout', [
+// 'as' => 'logout',
 // function() {
-//     return view('welcome');
+//     return abort(404);
 //     }
 // ]);
+
+Route::any('/home', [
+'as' => 'home',
+function() {
+    return view('welcome');
+    }
+]);

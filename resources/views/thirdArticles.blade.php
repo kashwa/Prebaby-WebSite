@@ -34,19 +34,60 @@
             {{-- Insert some content here --}}
 
             {{-- TAKE BUILDING FROM CORP LARAVEL PROJECT </GITHUB> --}}
+            
+            <div class="w3-container w3-white" style="padding:128px 16px">
 
-        <div class="w3-container" style="padding:128px 16px" id="about">
-        <h3 class="w3-center" style="color: #0f7e9b">THIRD TRIMESTER ARTICLES'</h3>
-        <p class="w3-center w3-large" style="color: #0f7e9b">IN THIS PERIOD OF TIME</p>
-        <div class="w3-row-padding w3-center" style="margin-top:64px">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa odio soluta quae labore sequi dolore nulla! Cupiditate tempore ipsam nostrum tenetur, explicabo enim molestiae modi, et, porro reiciendis dignissimos facilis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa odio soluta quae labore sequi dolore nulla! Cupiditate tempore ipsam nostrum tenetur, explicabo enim molestiae modi, et, porro reiciendis dignissimos facilis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa odio soluta quae labore sequi dolore nulla! Cupiditate tempore ipsam nostrum tenetur, explicabo enim molestiae modi, et, porro reiciendis dignissimos facilis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa odio soluta quae labore sequi dolore nulla! Cupiditate tempore ipsam nostrum tenetur, explicabo enim molestiae modi, et, porro reiciendis dignissimos facilis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa odio soluta quae labore sequi dolore nulla! Cupiditate tempore ipsam nostrum tenetur, explicabo enim molestiae modi, et, porro reiciendis dignissimos facilis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa odio soluta quae labore sequi dolore nulla! Cupiditate tempore ipsam nostrum tenetur, explicabo enim molestiae modi, et, porro reiciendis dignissimos facilis.</p>
-        </div>
-        </div>
+                <div class="w3-row-padding">
+                    <div class="w3-col m6 w3-light-grey" style="color: #000">
+                        <h2>Article no:1</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                        </div>
+                        
+                    {{-- this is sidebar --}}
+                    <div class="w3-col m3" style="margin-left:350px; background-color: #7cabb7">
+                        <h3>Side Bar</h3>
+                        <a href="#">Link 1</a><br>
+                        <a href="#">Link 2</a><br>
+                        <a href="#">Link 3</a><br>
+                        <a href="#">Link 4</a><br>
+                        <a href="#">Link 4</a><br>
+                        <a href="#">Link 4</a><br>
+                        <a href="#">Link 4</a><br>
+                        <a href="#">Link 4</a><br>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w3-container w3-white" style="padding:21px 16px 10px 16px">
+
+                <div class="w3-row-padding">
+                    <div class="w3-col m6 w3-light-grey" style="color: #000">
+                        <h3>New Article</h3>
+                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                        </div>
+                <div class="w3-row-padding">
+                    <div class="w3-col m6 w3-light-grey" style="color: #000; margin: 111px 0px">
+                        <h3>New Article</h3>
+                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                        <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
+                        </div>
+                    
+                </div>
+
+            </div>
             
 
         

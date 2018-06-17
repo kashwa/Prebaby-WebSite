@@ -24,7 +24,7 @@ Route::group(['middleware' => ['web']], function() {
 //     return view('firstArticles');
 // });
 Route::get('/first',[
-    'uses' => 'ArticleController@first'
+    'uses' => 'ArticleController@index'
 ]);
 
 Route::get('second', function() {

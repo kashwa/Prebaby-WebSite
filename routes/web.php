@@ -11,8 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['middleware' => ['web']], function() {
+    Route::get('/', function () {
+        return view('welcome');
+    });
 });
 
 // route to trimesters pages'
@@ -29,10 +31,10 @@ Route::get('third', function() {
     return view('thirdArticles');
 });
 
-Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
 
+Auth::routes();
 Route::any('/register', [
 'as' => 'register',
 function() {

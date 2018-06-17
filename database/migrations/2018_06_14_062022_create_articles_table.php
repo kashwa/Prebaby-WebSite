@@ -17,6 +17,7 @@ class CreateArticlesTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->text('body');
+            $table->integer('trimester');
             $table->timestamps();
         });
     }

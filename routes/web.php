@@ -20,20 +20,18 @@ Route::group(['middleware' => ['web']], function() {
 // route to trimesters pages'
 // First - Second - Third.
 
-// Route::get('first', function() {
-//     return view('firstArticles');
-// });
 Route::get('/first',[
-    'uses' => 'ArticleController@index'
+    'uses' => 'ArticleController@index1'
+    ]);
+    
+    Route::get('second', [
+    'uses' => 'ArticleController@index2'
+        
+        ]);
+        
+Route::get('third', [
+    'uses' => 'ArticleController@index3'
 ]);
-
-Route::get('second', function() {
-    return view('secondArticles');
-});
-
-Route::get('third', function() {
-    return view('thirdArticles');
-});
 
 
 // Route::get('/home', 'HomeController@index')->name('home');

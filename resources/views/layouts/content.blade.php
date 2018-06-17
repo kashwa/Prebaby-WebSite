@@ -86,8 +86,8 @@
         <!-- <img src="/media/aabed/FUN/usama.jpg" alt="Dan" style="width:100%"> -->
         <div class="w3-container">
           <h3>Usama Alaa</h3>
-          <p class="w3-opacity">Designer</p>
-          <p>Designer for Mobile app and website.</p>
+          <p class="w3-opacity">UI Designer</p>
+          <p>Junior android developer.</p>
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
@@ -113,7 +113,7 @@
 	        <!-- <img src="/media/aabed/FUN/PHOTOS/profpic.jpg" alt="Mike" style="width:100%"> -->
 	        <div class="w3-container">
 	          <h3>Hebatuallah Nasser</h3>
-	          <p class="w3-opacity">Systen flow and Analysis</p>
+	          <p class="w3-opacity">System flow and Analysis</p>
 	          <p>System flow, mockups and analysis.</p>
 	          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
 	        </div>

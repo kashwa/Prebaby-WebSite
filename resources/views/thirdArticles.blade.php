@@ -9,7 +9,7 @@
     {{-- navbar --}}
     <div class="w3-top">
         <div class="w3-bar w3-white w3-card" id="myNavbar">
-            <a href="#home" class="w3-bar-item w3-button w3-wide">Prebaby</a>
+            <a class="w3-bar-item w3-button w3-wide">Prebaby</a>
             <!-- Right-sided navbar links -->
             <div class="w3-right w3-hide-small">
             <a href="/" class="w3-bar-item w3-button" style="color:#0f7e9b"><i class="fa fa-home"></i> HOME</a>
@@ -30,65 +30,29 @@
 
 
     <body>
-            {{-- Insert some content here --}}
-
-            {{-- TAKE BUILDING FROM CORP PROJECT </GITHUB> --}}
+            @guest
+                {{-- Insert some content here --}}
+                @foreach ($articles as $article)
             
-            <div class="w3-container w3-white" style="padding:128px 16px">
+                    <div class="w3-container w3-white" style="padding:70px 16px ; border-top: 1px solid #ccc">
 
-                <div class="w3-row-padding">
-                    <div class="w3-col m6 w3-light-grey" name="firstArt" style="margin-bottom: 20px;color: #000">
-                        <h2>Article no:1</h2>
-                        <p>Lorem ipsum, dolor sit amet conasdasdasdasdasdasljnadnadncpkaclma[xmc[zmxc[mzxcmzpicmpzsectetur adipisicing elit. Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                        </div>
-                        
-                    {{-- this is sidebar --}}
-                    {{-- there is a problem in sidebar, must align to top of first article --}}
-                    <div class="w3-col m4" style="margin:0px 107px; background-color: #7cabb7">
-                        <h3>Side Bar</h3>
-                        <a href="#">Link 1</a><br>
-                        <a href="#">Link 2</a><br>
-                        <a href="#">Link 3</a><br>
-                        <a href="#">Link 4</a><br>
-                        <a href="#">Link 4</a><br>
-                        <a href="#">Link 4</a><br>
-                        <a href="#">Link 4</a><br>
-                        <a href="#">Link 4</a><br>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="w3-container w3-white" style="padding:21px 16px 10px 16px">
-
-                <div class="w3-row-padding">
-                        <div class="w3-col m6 w3-light-grey" style="color: #000">
-                            <h3>New Article</h3>
-                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                            </div>
                     <div class="w3-row-padding">
-                        <div class="w3-col m6 w3-light-grey" style="color: #000; margin: 111px 0px">
-                            <h3>New Article</h3>
-                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                            <p>Commodi quis, accusantium in libero, illum dolores qui blanditiis aut deserunt vel aspernatur mollitia quasi praesentium, quae itaque temporibus! Praesentium, maiores impedit.</p>
-                            </div>
-                        
+                        <div class="w3-col m6 w3-light-grey  w3-card" name="firstArt" style="padding: 15px ; margin-bottom: 20px;color: #000">
+                            <h2>{{ $article->title }}</h2><br>
+                            {{ $article->body }}
+                        </div>
+                            
+                        </div>
                     </div>
 
                 </div>
-            </div>
+
+             @endforeach
+        @else
+            
+            @include('admin.admincontent')
+            
+        @endguest
 
         
 

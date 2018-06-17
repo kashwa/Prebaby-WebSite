@@ -19,9 +19,13 @@ Route::group(['middleware' => ['web']], function() {
 
 // route to trimesters pages'
 // First - Second - Third.
-Route::get('first', function() {
-    return view('firstArticles');
-});
+
+// Route::get('first', function() {
+//     return view('firstArticles');
+// });
+Route::get('/first',[
+    'uses' => 'ArticleController@first'
+]);
 
 Route::get('second', function() {
     return view('secondArticles');

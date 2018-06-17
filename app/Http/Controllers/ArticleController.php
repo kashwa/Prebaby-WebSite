@@ -7,8 +7,9 @@ use Illuminate\Http\Request;
 
 class ArticleController extends Controller
 {
+
     /**
-     * The Logic to create a post.
+     * The Logic to create a article.
      *
      * @param Request $request
      * @return void
@@ -27,8 +28,13 @@ class ArticleController extends Controller
         $article->trimester = $request['trimester'];
 
         $article->save();
-         return Redirect()->back()->with('success', 'Article Created');
+        return Redirect()->back()->with('success', 'Article Created');
     }
+
+    /**
+     * Logic to Read all articles,
+     * load each article to its location.
+     */
 
     public function index1(){
         $articles = Article::where('trimester',1)->get();
@@ -43,6 +49,18 @@ class ArticleController extends Controller
     public function index3(){
         $articles = Article::where('trimester',3)->get();
         return view('firstArticles', ['articles' => $articles]);
+    }
+
+    /**
+     * Logic to Get rid of articles.
+     * and Delete them.
+     */
+    public function deleteArticle($article_id){
+        
+        $article = Article::where('id', $article_id)->first();
+        $article->delete();
+        return Redirect()->back()->with('success', 'Deleted');
+
     }
 
 }

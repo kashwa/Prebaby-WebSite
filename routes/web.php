@@ -58,3 +58,12 @@ function() {
     return view('welcome');
     }
 ]);
+
+/**
+ * To create a new Article after
+ * hitting submit button.
+ */
+Route::post('/createarticle', [
+    'uses'  => 'ArticleController@articleCreateArticle',
+    'as'    => 'article.create'
+]);

@@ -9,6 +9,11 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+    // Make relation between Admin and Articles
+    public function article(){
+        return $this->hasMany('App\Article');
+    }
+
     /**
      * The attributes that are mass assignable.
      *

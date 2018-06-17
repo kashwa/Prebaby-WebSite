@@ -33,21 +33,33 @@
     <body>
             {{-- Insert some content here --}}
 
-            {{-- TAKE BUILDING FROM CORP LARAVEL PROJECT </GITHUB> --}}
-
-        <div class="w3-container" style="padding:128px 16px" id="about">
-        <h3 class="w3-center" style="color: #0f7e9b" id="third">SECOND TRIMESTER ARTICLES'</h3>
-        <p class="w3-center w3-large" style="color: #0f7e9b">IN THIS PERIOD OF TIME</p>
-        <div class="w3-row-padding w3-center" style="margin-top:64px">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa odio soluta quae labore sequi dolore nulla! Cupiditate tempore ipsam nostrum tenetur, explicabo enim molestiae modi, et, porro reiciendis dignissimos facilis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa odio soluta quae labore sequi dolore nulla! Cupiditate tempore ipsam nostrum tenetur, explicabo enim molestiae modi, et, porro reiciendis dignissimos facilis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa odio soluta quae labore sequi dolore nulla! Cupiditate tempore ipsam nostrum tenetur, explicabo enim molestiae modi, et, porro reiciendis dignissimos facilis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa odio soluta quae labore sequi dolore nulla! Cupiditate tempore ipsam nostrum tenetur, explicabo enim molestiae modi, et, porro reiciendis dignissimos facilis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa odio soluta quae labore sequi dolore nulla! Cupiditate tempore ipsam nostrum tenetur, explicabo enim molestiae modi, et, porro reiciendis dignissimos facilis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa odio soluta quae labore sequi dolore nulla! Cupiditate tempore ipsam nostrum tenetur, explicabo enim molestiae modi, et, porro reiciendis dignissimos facilis.</p>
-        </div>
-        </div>
+        @guest
+                {{-- Insert some content here --}}
+                @foreach ($articles as $article)
             
+                    <div class="w3-container w3-white" style="padding:85px 16px ; border-top: 1px solid #ccc">
+
+                    <div class="w3-row-padding">
+                        <div class="w3-col m6 w3-light-grey  w3-card" name="firstArt" style="padding: 15px ; margin-bottom: 20px;color: #000">
+                            <h2>{{ $article->title }}</h2><br>
+                            {{ $article->body }}
+                        </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+             @endforeach
+        @else
+        
+        @include('layouts.postArticle')
+        @include('admin.admincontent')
+
+           
+        @endguest
+        
+
 
         
 

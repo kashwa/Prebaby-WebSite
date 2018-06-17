@@ -67,3 +67,13 @@ Route::post('/createarticle', [
     'uses'  => 'ArticleController@articleCreateArticle',
     'as'    => 'article.create'
 ]);
+
+/**
+ * To Delete an Article after
+ * hitting delete button.
+ */
+Route::get('/delete-article/{article_id}', [
+    'uses'          => 'ArticleController@deleteArticle',
+    'as'            => 'article.delete',
+    'middleware'    => 'auth'
+]);

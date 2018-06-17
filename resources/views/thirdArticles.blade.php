@@ -26,11 +26,10 @@
         padding: 16px;
     }
     </style>
-        
-
-
+      
     <body>
-            @guest
+            
+        @guest
                 {{-- Insert some content here --}}
                 @foreach ($articles as $article)
             

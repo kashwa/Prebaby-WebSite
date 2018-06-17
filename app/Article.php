@@ -8,6 +8,6 @@ class Article extends Model
 {
     // Make relation between Articles and Admins
     public function admin() {
-        return $this->belongsTo('App\User');
+        return $this->belongsTo('Prebaby\User');
     }
 }

@@ -4,3 +4,8 @@
 $('#first').find('#second').find('#third').find('.edit').find('#btn').on('click', function () {
     $('#edit-modal').modal();
 });
+
+/**
+ * I think i will not use that way,
+ * searching for POLO way...
+ */

@@ -1,29 +1,46 @@
+<!-- Articles Section -->
+<div class="w3-container w3-center w3-light-gray" style="padding:128px 16px" id="pricing">
+  <h3>ARTICLES</h3>
+  <p class="w3-large">Choose what fits your Trimester.</p>
 
-<!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center" style="color: #0f7e9b">ABOUT THE WEBSITE</h3>
-  <p class="w3-center w3-large" style="color: #0f7e9b">Key features of our website</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center" style="color: #92d7ef"></i>
-      <p class="w3-large">Responsive</p>
-      <p>Our website is designed to be responsive and suitable to use from PC, Laptop, or even from your mobile phone.</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-container w3-light-blue w3-xlarge w3-padding-32">1 : 3</li>
+        
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">View Articles for first Trimester</h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+        <a href="/first"><button class="w3-button w3-black w3-padding-large">Go</button></a>
+        </li>
+      </ul>
     </div>
-    <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"  style="color: #92d7ef"></i>
-      <p class="w3-large">Passion</p>
-      <p>We made our website and mobile app with passion and Love to guarantee a nice and safe period for your pregnancy.</p>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-container w3-aqua w3-xlarge w3-padding-32">4 : 6</li>
+        
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">View Articles for Second Trimester</h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <a href="/second"><button class="w3-button w3-black w3-padding-large">Go</button></a>
+        </li>
+      </ul>
     </div>
-    <div class="w3-quarter">
-      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"  style="color: #92d7ef"></i>
-      <p class="w3-large">Design</p>
-      <p>Hey baby website is designed using a joyful Color palette to make it suitable for you and your baby happyness.</p>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-container w3-pale-red w3-xlarge w3-padding-32">7 : 9</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">View Articles for Third Trimester</h2>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <a href="/third"><button class="w3-button w3-black w3-padding-large">Go</button></a>
+        </li>
+      </ul>
     </div>
-    <div class="w3-quarter">
-      <i class="fa fa-cog w3-margin-bottom w3-jumbo"  style="color: #92d7ef"></i>
-      <p class="w3-large">Support</p>
-      <p>Our mobile app has a chatbot to support you in each single situation, our mail and team is at your service 24/7.</p>
-    </div>
+
   </div>
 </div>
 
@@ -215,49 +232,32 @@
   </div>
 </div>
 
-<!-- Articles Section -->
-<div class="w3-container w3-center w3-light-gray" style="padding:128px 16px" id="pricing">
-  <h3>ARTICLES</h3>
-  <p class="w3-large">Choose what fits your Trimester.</p>
 
-  <div class="w3-row-padding" style="margin-top:64px">
-
-    <div class="w3-third w3-section">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-container w3-light-blue w3-xlarge w3-padding-32">1 : 3</li>
-        
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">View Articles for first Trimester</h2>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-        <a href="/first"><button class="w3-button w3-black w3-padding-large">Go</button></a>
-        </li>
-      </ul>
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center" style="color: #0f7e9b">ABOUT THE WEBSITE</h3>
+  <p class="w3-center w3-large" style="color: #0f7e9b">Key features of our website</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center" style="color: #92d7ef"></i>
+      <p class="w3-large">Responsive</p>
+      <p>Our website is designed to be responsive and suitable to use from PC, Laptop, or even from your mobile phone.</p>
     </div>
-    <div class="w3-third">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-container w3-aqua w3-xlarge w3-padding-32">4 : 6</li>
-        
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">View Articles for Second Trimester</h2>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <a href="/second"><button class="w3-button w3-black w3-padding-large">Go</button></a>
-        </li>
-      </ul>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"  style="color: #92d7ef"></i>
+      <p class="w3-large">Passion</p>
+      <p>We made our website and mobile app with passion and Love to guarantee a nice and safe period for your pregnancy.</p>
     </div>
-    <div class="w3-third w3-section">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-container w3-pale-red w3-xlarge w3-padding-32">7 : 9</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide">View Articles for Third Trimester</h2>
-        </li>
-        <li class="w3-light-grey w3-padding-24">
-          <a href="/third"><button class="w3-button w3-black w3-padding-large">Go</button></a>
-        </li>
-      </ul>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"  style="color: #92d7ef"></i>
+      <p class="w3-large">Design</p>
+      <p>Hey baby website is designed using a joyful Color palette to make it suitable for you and your baby happyness.</p>
     </div>
-
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"  style="color: #92d7ef"></i>
+      <p class="w3-large">Support</p>
+      <p>Our mobile app has a chatbot to support you in each single situation, our mail and team is at your service 24/7.</p>
+    </div>
   </div>
 </div>
 

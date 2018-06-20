@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="{{ URL::to('js/myapp.js') }}"></script>
 
     {{-- navbar --}}
     <div class="w3-top">
@@ -35,8 +33,6 @@
         
     <body>
 
-        {{-- include this at admin area --}}
-        {{-- @include('layouts.postArticle') --}}
 
         @guest
                 {{-- Insert some content here --}}

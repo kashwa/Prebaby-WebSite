@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-   <title>First Trimester</title>
+   <title>Edit Article</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="{{url('/')}}/images/prebabyLogo.png" type="image/x-icon">
@@ -35,12 +35,6 @@
         
     <body>
 
-        {{-- include this at admin area --}}
-        {{-- @include('layouts.postArticle') --}}
-
-        {{-- {{ $articles = $article }} --}}
-        @foreach ($articles as $article)
-
         <link rel="stylesheet" href="/css/bootstrap.css">
             <div class="w3-container w3-white" style="padding:50px 16px">
             <section class="row">
@@ -48,27 +42,38 @@
             <header>
                 <h3>Edit Article</h3><br>
 
-                <form action="{{ route('article.edit', ['article' => $articles->id]) }}" method="POST">
+                <form action="{{ route('article.save', ['article' => $articles->id]) }}" method="POST">
                     <input name="_method" type="hidden" value="PATCH">
                     <div class="form-group">
                     <input type="text" class="form-control" name="title" id="new-title" style="margin-bottom: 7px" value="{{$articles->title}}">
                     <textarea class="form-control" name="body" id="new-article" rows="10">{{$articles->body}}</textarea>
                         <input type="text" name="trimester" id="new-trimester" value="{{$articles->trimester}}">
                         <input type="hidden" value="{{ Session::token() }}" name="_token">
-                        <button type="submit" class="btn btn-primary" style="margin: 7px">Edit</button>
+                            <button type="submit" class="btn btn-primary" style="margin: 7px">Edit</button>
                     </div>
                 </form>
             </header>
             </div>
             </section>
         </div>
-        {{-- <div class="w3-container w3-light-gray" style="margin-top: 118px">
-                        {{ dd($articles->trimester) }}
-            TEST WITH THIS PART
-        </div> --}}
-        @endforeach
+        
+        {{-- Error Validation - Verify Success session --}}
 
-            
+        @if(count($errors) > 0)
+            @foreach($errors -> all() as $error)
+                <div class="alert alert-danger">
+                    {{$error}}
+                </div>
+            @endforeach
+        @endif
+
+        @if(session('success'))
+            <div class="alert alert-success">
+                <strong>Successfully!</strong> {{session('success')}}
+            </div>
+        @endif
+
+
         <!-- Footer -->
         <footer class="w3-center w3-blue-grey w3-padding-64">
             <div class="w3-xlarge w3-section">

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
-    <title>Second Trimester</title>
+   <title>First Trimester</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="{{url('/')}}/images/prebabyLogo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
+    <script src="{{ URL::to('js/myapp.js') }}"></script>
+
     {{-- navbar --}}
     <div class="w3-top">
         <div class="w3-bar w3-white w3-card" id="myNavbar">
@@ -32,38 +33,32 @@
     }
     </style>
         
-
-
     <body>
-            {{-- Insert some content here --}}
 
-        @guest
-                {{-- Insert some content here --}}
-                @foreach ($articles as $article)
-            
-                    <div class="w3-container w3-white" style="padding:85px 16px ; border-top: 1px solid #ccc">
+        {{-- include this at admin area --}}
+        {{-- @include('layouts.postArticle') --}}
 
-                    <div class="w3-row-padding">
-                        <div class="w3-col m6 w3-light-grey  w3-card" name="firstArt" style="padding: 15px ; margin-bottom: 20px;color: #000">
-                            <h2>{{ $article->title }}</h2><br>
-                            {{ $article->body }}
-                        </div>
-                            
-                        </div>
+        
+        <link rel="stylesheet" href="/css/bootstrap.css">
+            <div class="w3-container w3-white" style="padding:50px 16px">
+                <section class="row">
+                    <div class="col-md-6 col-md-offset-3 w3-light-gray" style="margin-left: 7% ; margin-top: 7% ; padding: 17px">
+                        <header>
+                            <h3>Edit an Article</h3><br>
+
+                            <form action="{{ route('article.create') }}" method="POST">
+                                <div class="form-group">
+                                <input type="text" class="form-control" name="title" id="new-title" placeholder="Enter a Title" style="margin-bottom: 7px" value="{{ old('title') }}">
+                                <textarea class="form-control" name="body" id="new-article" rows="10" placeholder="Write new Article">{{ old('body') }}</textarea>
+                                    <input type="text" name="trimester" id="new-trimester" placeholder="    Enter Trimester">
+                                    <input type="hidden" value="{{ Session::token() }}" name="_token">
+                                    <button type="submit" class="btn btn-primary" style="margin: 7px">Update</button>
+                                </div>
+                            </form>
+                        </header>
                     </div>
-
-                </div>
-
-             @endforeach
-        @else
-        
-        @include('layouts.postArticle')
-        @include('admin.admincontent')
-           
-        @endguest
-        
-
-
+                </section>
+            </div>
         
 
             

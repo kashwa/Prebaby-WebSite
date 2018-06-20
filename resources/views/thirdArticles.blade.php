@@ -52,10 +52,10 @@
 
              @endforeach
         @else
+        
             @include('layouts.postArticle')
             @include('admin.admincontent')
-            @include('layouts.editmodal')
-            
+
         @endguest
 
         

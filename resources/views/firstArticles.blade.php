@@ -62,7 +62,30 @@
 
         @include('admin.admincontent')
 
-        @include('layouts.editmodal')
+         {{-- @foreach ($articles as $article)
+        
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <div class="w3-container w3-white" style="padding:50px 16px">
+            <section class="row">
+                <div class="col-md-6 col-md-offset-3 w3-light-gray" style="margin-left: 7% ; margin-top: 7% ; padding: 17px">
+                    <header>
+                        <h3>Edit Article</h3><br>
+
+                        <form action="{{ route('article.edit', ['article' => $article->id]) }}" method="post">
+                            <input name="_method" type="hidden" value="PATCH">
+                            <div class="form-group">
+                            <input type="text" class="form-control" name="title" id="new-title" style="margin-bottom: 7px" value="{{$article->title}}">
+                            <textarea class="form-control" name="body" id="new-article" rows="5">{{$article->body}}</textarea>
+                                <input type="text" name="trimester" id="new-trimester" value="{{$article->trimester}}">
+                                <input type="hidden" value="{{ Session::token() }}" name="_token">
+                                <button type="submit" class="btn btn-primary" style="margin: 7px">Edit</button>
+                            </div>
+                        </form>
+                    </header>
+                </div>
+            </section>
+        </div>
+    @endforeach --}}
            
         @endguest
         

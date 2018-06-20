@@ -5,12 +5,14 @@
         <div class="w3-col m6 w3-light-grey  w3-card" id="third" name="firstArt" style="padding: 15px ; margin-bottom: 20px;color: #000">
             <h2>{{ $article->title }}</h2><br>
             {{ $article->body }}<br><br><br>
-            
+
+            {{-- set up delete button --}}
+
                 <a href="{{ route('article.delete', ['id' => $article->id]) }}">
                 <button type="button" class="btn btn-outline-danger">Delete</button>&nbsp;
                 </a>
                 
-                {{-- <a href="{{ route('article.edit', ['article' => $article->id]) }}"> --}}
+                {{-- set up Edit button --}}
                 <a href="{{route('article.edit', ['article' => $article->id])}}">
                     <button type="button" class="btn btn-outline-info" id="btn">Edit</button>
                 </a>

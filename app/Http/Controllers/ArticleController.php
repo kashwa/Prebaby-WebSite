@@ -65,35 +65,30 @@ class ArticleController extends Controller
 
 
     /**
-     * Logic to edit articles.
+     * Logic to edit articles,
+     * using the old branch.
      */
 
-    // public function editArticle($article_id){
+    public function editArticle($article_id, Request $request){
 
-    //     $article = Article::where('id', $article_id)->first();
+        $articles = Article::where('id', $article_id)->first();
         
-    //     $request->validate([
-    // 		'body' 		=>	'required|max:255',
-    // 		'title'		=>	'required',
-    // 		'trimester'	=>	'digits_between:0,1|numeric|in:1,2,3'
-    //     ]);
+        // $request->validate([
+    	// 	'body' 		=>	'required|max:255',
+    	// 	'title'		=>	'required',
+    	// 	'trimester'	=>	'digits_between:0,1|numeric|in:1,2,3'
+        // ]);
         
-    //     $article = new Article();
+        $article = new Article();
 
-    //     $article->body = $request['body']; # Get the body from the form and save it.
-    //     $article->title = $request['title'];
-    //     $article->trimester = $request['trimester'];
+        $article->body = $request['body']; # Get the body from the form and save it.
+        $article->title = $request['title'];
+        $article->trimester = $request['trimester'];
 
-    //     $article->save();
-    //     return Redirect()->back()->with('success', 'Article Created');
-    //     return view('layouts.editArticle', ['articles' => $articles]);
+        // $article->save();
+        // return Redirect()->back()->with('success', 'Article Updated');
+        return view('layouts.editArticle', ['articles' => $articles]);
         
-    // }
-
-    /**
-     * Making a brand new function to make edit
-     */
-    public function editArticle(){
-        return view ('layouts.editArticle');
     }
+
 }

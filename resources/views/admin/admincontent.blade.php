@@ -11,7 +11,7 @@
                 </a>
                 
                 {{-- <a href="{{ route('article.edit', ['article' => $article->id]) }}"> --}}
-                <a href="{{route('article.edit')}}">
+                <a href="{{route('article.edit', ['article' => $article->id])}}">
                     <button type="button" class="btn btn-outline-info" id="btn">Edit</button>
                 </a>
             </div>

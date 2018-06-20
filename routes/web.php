@@ -82,7 +82,7 @@ Route::get('/delete-article/{article_id}', [
  * To Edit an Article after
  * hitting edit button.
  */
-Route::get('/edit-article', [
+Route::any('/edit-article/{article_id}', [
     'uses' => 'ArticleController@editArticle',
     'as' => 'article.edit',
     'middleware' => 'auth'

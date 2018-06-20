@@ -38,28 +38,35 @@
         {{-- include this at admin area --}}
         {{-- @include('layouts.postArticle') --}}
 
-        
+        {{-- {{ $articles = $article }} --}}
+        @foreach ($articles as $article)
+
         <link rel="stylesheet" href="/css/bootstrap.css">
             <div class="w3-container w3-white" style="padding:50px 16px">
-                <section class="row">
-                    <div class="col-md-6 col-md-offset-3 w3-light-gray" style="margin-left: 7% ; margin-top: 7% ; padding: 17px">
-                        <header>
-                            <h3>Edit an Article</h3><br>
+            <section class="row">
+            <div class="col-md-6 col-md-offset-3 w3-light-gray" style="margin-left: 7% ; margin-top: 7% ; padding: 17px">
+            <header>
+                <h3>Edit Article</h3><br>
 
-                            <form action="{{ route('article.create') }}" method="POST">
-                                <div class="form-group">
-                                <input type="text" class="form-control" name="title" id="new-title" placeholder="Enter a Title" style="margin-bottom: 7px" value="{{ old('title') }}">
-                                <textarea class="form-control" name="body" id="new-article" rows="10" placeholder="Write new Article">{{ old('body') }}</textarea>
-                                    <input type="text" name="trimester" id="new-trimester" placeholder="    Enter Trimester">
-                                    <input type="hidden" value="{{ Session::token() }}" name="_token">
-                                    <button type="submit" class="btn btn-primary" style="margin: 7px">Update</button>
-                                </div>
-                            </form>
-                        </header>
+                <form action="{{ route('article.edit', ['article' => $articles->id]) }}" method="POST">
+                    <input name="_method" type="hidden" value="PATCH">
+                    <div class="form-group">
+                    <input type="text" class="form-control" name="title" id="new-title" style="margin-bottom: 7px" value="{{$articles->title}}">
+                    <textarea class="form-control" name="body" id="new-article" rows="10">{{$articles->body}}</textarea>
+                        <input type="text" name="trimester" id="new-trimester" value="{{$articles->trimester}}">
+                        <input type="hidden" value="{{ Session::token() }}" name="_token">
+                        <button type="submit" class="btn btn-primary" style="margin: 7px">Edit</button>
                     </div>
-                </section>
+                </form>
+            </header>
             </div>
-        
+            </section>
+        </div>
+        {{-- <div class="w3-container w3-light-gray" style="margin-top: 118px">
+                        {{ dd($articles->trimester) }}
+            TEST WITH THIS PART
+        </div> --}}
+        @endforeach
 
             
         <!-- Footer -->

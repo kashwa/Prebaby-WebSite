@@ -34,7 +34,6 @@ Route::get('third', [
 ]);
 
 
-// Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 Route::any('/register', [
@@ -59,6 +58,7 @@ function() {
     }
 ]);
 
+
 /**
  * To create a new Article after
  * hitting submit button.
@@ -67,6 +67,7 @@ Route::post('/createarticle', [
     'uses'  => 'ArticleController@articleCreateArticle',
     'as'    => 'article.create'
 ]);
+
 
 /**
  * To Delete an Article after
@@ -78,6 +79,7 @@ Route::get('/delete-article/{article_id}', [
     'middleware'    => 'auth'
 ]);
 
+
 /**
  * To Edit an Article after
  * hitting edit button.
@@ -85,5 +87,16 @@ Route::get('/delete-article/{article_id}', [
 Route::any('/edit-article/{article_id}', [
     'uses' => 'ArticleController@editArticle',
     'as' => 'article.edit',
+    'middleware' => 'auth'
+]);
+
+
+/**
+ * To Save an Article after
+ * hitting edit button.
+ */
+Route::any('/save-article/{article_id}', [
+    'uses' => 'ArticleController@save',
+    'as' => 'article.save',
     'middleware' => 'auth'
 ]);

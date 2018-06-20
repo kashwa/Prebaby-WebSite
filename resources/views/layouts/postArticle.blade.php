@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="/css/bootstrap.css">
-<div class="w3-container w3-white" style="padding:70px 16px">
+<div class="w3-container w3-white" style="padding:50px 16px">
     <section class="row">
-        <div class="col-md-6 col-md-offset-3" style="margin-left: 7% ; margin-top: 7%">
+        <div class="col-md-6 col-md-offset-3 w3-light-gray" style="margin-left: 7% ; margin-top: 7% ; padding: 17px">
             <header>
                 <h3>Create an Article</h3><br>
 

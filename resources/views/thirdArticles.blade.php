@@ -33,7 +33,6 @@
     <body>
             
         @guest
-                {{-- Insert some content here --}}
                 @foreach ($articles as $article)
             
                     <div class="w3-container w3-white" style="padding:70px 16px ; border-top: 1px solid #ccc">

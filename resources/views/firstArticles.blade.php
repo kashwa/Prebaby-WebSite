@@ -40,16 +40,16 @@
             
                     <div class="w3-container w3-white" style="padding:85px 16px ; border-top: 1px solid #ccc">
 
-                    <div class="w3-row-padding">
-                        <div class="w3-col m6 w3-light-grey  w3-card" name="firstArt" style="padding: 15px ; margin-bottom: 20px;color: #000">
-                            <h2>{{ $article->title }}</h2><br>
-                            {{ $article->body }}
+                        <div class="w3-row-padding">
+                            <div class="w3-col m6 w3-light-grey  w3-card" name="firstArt" style="padding: 15px ; margin-bottom: 20px;color: #000">
+                                <h2>{{ $article->title }}</h2><br>
+                                {{ $article->body }}
+                            </div>
+                                
+                            </div>
                         </div>
-                            
-                        </div>
-                    </div>
 
-                </div>
+                    </div>
 
              @endforeach
         @else
@@ -58,31 +58,6 @@
 
         @include('admin.admincontent')
 
-         {{-- @foreach ($articles as $article)
-        
-        <link rel="stylesheet" href="/css/bootstrap.css">
-        <div class="w3-container w3-white" style="padding:50px 16px">
-            <section class="row">
-                <div class="col-md-6 col-md-offset-3 w3-light-gray" style="margin-left: 7% ; margin-top: 7% ; padding: 17px">
-                    <header>
-                        <h3>Edit Article</h3><br>
-
-                        <form action="{{ route('article.edit', ['article' => $article->id]) }}" method="post">
-                            <input name="_method" type="hidden" value="PATCH">
-                            <div class="form-group">
-                            <input type="text" class="form-control" name="title" id="new-title" style="margin-bottom: 7px" value="{{$article->title}}">
-                            <textarea class="form-control" name="body" id="new-article" rows="5">{{$article->body}}</textarea>
-                                <input type="text" name="trimester" id="new-trimester" value="{{$article->trimester}}">
-                                <input type="hidden" value="{{ Session::token() }}" name="_token">
-                                <button type="submit" class="btn btn-primary" style="margin: 7px">Edit</button>
-                            </div>
-                        </form>
-                    </header>
-                </div>
-            </section>
-        </div>
-    @endforeach --}}
-           
         @endguest
         
 

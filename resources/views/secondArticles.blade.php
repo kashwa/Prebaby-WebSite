@@ -34,7 +34,6 @@
 
 
     <body>
-            {{-- Insert some content here --}}
 
         @guest
                 {{-- Insert some content here --}}
@@ -61,10 +60,6 @@
            
         @endguest
         
-
-
-        
-
             
         <!-- Footer -->
         <footer class="w3-center w3-blue-grey w3-padding-64">

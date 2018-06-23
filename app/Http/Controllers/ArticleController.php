@@ -43,12 +43,12 @@ class ArticleController extends Controller
 
     public function index2(){
         $articles = Article::where('trimester',2)->get();
-        return view('firstArticles', ['articles' => $articles]);
+        return view('secondArticles', ['articles' => $articles]);
     }
 
     public function index3(){
         $articles = Article::where('trimester',3)->get();
-        return view('firstArticles', ['articles' => $articles]);
+        return view('thirdArticles', ['articles' => $articles]);
     }
 
     /**
@@ -67,6 +67,9 @@ class ArticleController extends Controller
     /**
      * Logic to edit articles,
      * using the old branch.
+     * 
+     * (1) Get the old article into a new view.
+     * (2) Edit it and save a copy into db.
      */
     public function editArticle($article_id, Request $request, Article $req_article){
 
@@ -77,8 +80,8 @@ class ArticleController extends Controller
 
     /**
      * the Update is being done over 2 methods,
-     * [first] to get the old view,
-     * [second] to edit it and save to database.
+     * [FIRST] to get the old view,
+     * [SECOND] to edit it and save to database.
      *
      * @param [integer] $article_id
      * @param Request $request

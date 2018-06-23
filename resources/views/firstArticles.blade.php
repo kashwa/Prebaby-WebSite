@@ -54,9 +54,9 @@
              @endforeach
         @else
             
-        @include('layouts.postArticle')
+            @include('layouts.postArticle')
 
-        @include('admin.admincontent')
+            @include('admin.admincontent')
 
         @endguest
         

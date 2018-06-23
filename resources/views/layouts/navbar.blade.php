@@ -6,32 +6,25 @@
       @guest
         <a href="{{ route('login') }}" class="w3-bar-item w3-button" style="color:#0f7e9b"><i class="fa fa-user"></i> <strong>Login as admin</strong></a>
         @else
-          {{-- <div class="dropdown"> --}}
-                                   {{-- <button class="dropbtn"> {{ Auth::user()->name }}</button>
-                                      <div class="dropdown-content"> --}}
-                                        
-                                        
-                                        <a href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();"
-                                                     class="w3-bar-item w3-button" style="color:#0f7e9b">
-                                                     <i class="fa fa-sign-out"></i> <strong>Logout</strong>
-                                            
-                                        </a>
+                                
+            <a href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                          document.getElementById('logout-form').submit();"
+                          class="w3-bar-item w3-button" style="color:#0f7e9b">
+                          <i class="fa fa-sign-out"></i> <strong>Logout</strong>
+                
+            </a>
 
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                {{ csrf_field() }}
+            </form>
                                       
-                                      
-                                      
-                                      {{-- </div> --}}
-                              {{-- </div> --}}
+            
       @endguest
       <a href="#about" class="w3-bar-item w3-button" style="color:#0f7e9b">ABOUT</a>
       <a href="#team" class="w3-bar-item w3-button" style="color:#0f7e9b"><i class="fa fa-user"></i> TEAM</a>
       <a href="#work" class="w3-bar-item w3-button" style="color:#0f7e9b"><i class="fa fa-android"></i> APP</a>
-      <a href="#pricing" class="w3-bar-item w3-button" style="color:#0f7e9b"><i class="fa fa-file"></i> ARTICLES</a>
+      <a href="#articles" class="w3-bar-item w3-button" style="color:#0f7e9b"><i class="fa fa-file"></i> ARTICLES</a>
       <a href="#contact" class="w3-bar-item w3-button" style="color:#0f7e9b"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->

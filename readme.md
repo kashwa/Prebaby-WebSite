@@ -1,8 +1,8 @@
-# Prebaby [Web Site]
+# Prebaby [ WebSite ]
 
 **Version 1.0**
 
-This will be the Web site Repository, for our Graduation Project,
+This will be the Website Repository, for our Graduation Project,
 
 ## About Website
 

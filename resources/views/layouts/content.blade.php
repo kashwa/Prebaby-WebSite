@@ -1,5 +1,5 @@
 <!-- Articles Section -->
-<div class="w3-container w3-center w3-light-gray" style="padding:128px 16px" id="pricing">
+<div class="w3-container w3-center w3-light-gray" style="padding:128px 16px" id="articles">
   <h3>ARTICLES</h3>
   <p class="w3-large">Choose what fits your Trimester.</p>
 

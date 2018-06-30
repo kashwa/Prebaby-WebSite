@@ -178,31 +178,31 @@
 {{-- place screenshots here --}}
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l3 m6">
-      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+      <img src="{{url('/')}}/images/1.jpeg" style="width:100%" class="w3-hover-shadow" alt="">
     </div>
     <div class="w3-col l3 m6">
-      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+      <img src="{{url('/')}}/images/2.jpeg" style="width:100%" class="w3-hover-shadow" alt="">
     </div>
     <div class="w3-col l3 m6">
-      <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+      <img src="{{url('/')}}/images/3.jpeg" style="width:100%" class="w3-hover-shadow" alt="">
     </div>
     <div class="w3-col l3 m6">
-      <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+      <img src="{{url('/')}}/images/4.jpeg" style="width:100%" class="w3-hover-shadow" alt="">
     </div>
   </div>
 
   <div class="w3-row-padding w3-section">
     <div class="w3-col l3 m6">
-      <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+      <img src="{{url('/')}}/images/5.jpeg" style="width:100%" class="w3-hover-shadow" alt="">
     </div>
     <div class="w3-col l3 m6">
-      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+      <img src="{{url('/')}}/images/6.jpeg" style="width:100%" class="w3-hover-shadow" alt="">
     </div>
     <div class="w3-col l3 m6">
-      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+      <img src="{{url('/')}}/images/7.jpeg" style="width:100%" class="w3-hover-shadow" alt="">
     </div>
     <div class="w3-col l3 m6">
-      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+      <img src="{{url('/')}}/images/8.jpeg" style="width:100%" class="w3-hover-shadow" alt="">
     </div>
   </div>
 </div>

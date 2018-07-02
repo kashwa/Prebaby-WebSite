@@ -177,34 +177,25 @@
   <p class="w3-center w3-large">What we've done to care for you</p>
 {{-- place screenshots here --}}
   <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-col l3 m6">
-      <img src="{{url('/')}}/images/1.jpeg" style="width:100%" class="w3-hover-shadow" alt="">
-    </div>
+
     <div class="w3-col l3 m6">
       <img src="{{url('/')}}/images/2.jpeg" style="width:100%" class="w3-hover-shadow" alt="">
     </div>
+
     <div class="w3-col l3 m6">
       <img src="{{url('/')}}/images/3.jpeg" style="width:100%" class="w3-hover-shadow" alt="">
     </div>
-    <div class="w3-col l3 m6">
-      <img src="{{url('/')}}/images/4.jpeg" style="width:100%" class="w3-hover-shadow" alt="">
-    </div>
-  </div>
 
-  <div class="w3-row-padding w3-section">
     <div class="w3-col l3 m6">
-      <img src="{{url('/')}}/images/5.jpeg" style="width:100%" class="w3-hover-shadow" alt="">
+        <img src="{{url('/')}}/images/5.jpeg" style="width:100%" class="w3-hover-shadow" alt="">
     </div>
-    <div class="w3-col l3 m6">
-      <img src="{{url('/')}}/images/6.jpeg" style="width:100%" class="w3-hover-shadow" alt="">
-    </div>
+
     <div class="w3-col l3 m6">
       <img src="{{url('/')}}/images/7.jpeg" style="width:100%" class="w3-hover-shadow" alt="">
     </div>
-    <div class="w3-col l3 m6">
-      <img src="{{url('/')}}/images/8.jpeg" style="width:100%" class="w3-hover-shadow" alt="">
-    </div>
+    
   </div>
+
 </div>
 
 <!-- Modal for full size images on click-->

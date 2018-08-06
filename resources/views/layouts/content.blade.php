@@ -82,7 +82,7 @@
         <div class="w3-container">
           <h3>Ahmed Happa</h3>
           <p class="w3-opacity">Android Developer</p>
-          <p>Member at Android development Team.</p>
+          <p>Mobile app developer.</p>
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>

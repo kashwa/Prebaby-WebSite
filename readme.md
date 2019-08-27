@@ -1,6 +1,6 @@
 # Prebaby [ WebSite ]
 
-**Version 0.1**
+**Version 1.0**
 
 This will be the Website Repository, for our Graduation Project,
 

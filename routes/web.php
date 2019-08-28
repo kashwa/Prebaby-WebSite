@@ -57,7 +57,7 @@ Route::any('/home', [
  * hitting submit button.
  */
 Route::post('/createarticle', [
-    'uses' => 'ArticleController@articleCreateArticle',
+    'uses' => 'ArticleController@create',
     'as' => 'article.create'
 ]);
 

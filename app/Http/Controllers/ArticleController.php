@@ -4,9 +4,22 @@ namespace Prebaby\Http\Controllers;
 
 use Prebaby\Article;
 use Illuminate\Http\Request;
+use Prebaby\Http\Controllers\Repository\ArticleRepository;
 
 class ArticleController extends Controller
 {
+    protected $articleRepository;
+
+    /**
+     * Using Repository Design pattern.
+     *
+     * ArticleController constructor.
+     * @param ArticleRepository $articleRepo
+     */
+    public function __construct(ArticleRepository $articleRepo)
+    {
+        $this->articleRepository = $articleRepo;
+    }
 
     /**
      * The Logic to create a article.
@@ -14,20 +27,16 @@ class ArticleController extends Controller
      * @param Request $request
      * @return void
      */
-    public function articleCreateArticle(Request $request){
+    public function create(Request $request){
         $request->validate([
     		'body' 		=>	'required',
     		'title'		=>	'required',
     		'trimester'	=>	'digits_between:0,1|numeric|in:1,2,3'
         ]);
-        
-        $article = new Article();
 
-        $article->body = $request['body']; # Get the body from the form and save it.
-        $article->title = $request['title'];
-        $article->trimester = $request['trimester'];
+        // Call repository to create data
+        $this->articleRepository->save($request);
 
-        $article->save();
         return Redirect()->back()->with('success', 'Article Created');
     }
 

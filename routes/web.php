@@ -11,7 +11,7 @@
 |
 */
 
-Route::group(['middleware' => ['web']], function() {
+Route::group(['middleware' => ['web']], function () {
     Route::get('/', function () {
         return view('welcome');
     });
@@ -20,41 +20,34 @@ Route::group(['middleware' => ['web']], function() {
 // route to trimesters pages'
 // First - Second - Third.
 
-Route::get('/first',[
+Route::get('/first', [
     'uses' => 'ArticleController@index1'
-    ]);
-    
-    Route::get('second', [
+]);
+
+Route::get('second', [
     'uses' => 'ArticleController@index2'
-        
-        ]);
-        
+
+]);
+
 Route::get('third', [
     'uses' => 'ArticleController@index3'
 ]);
 
 
-
 Auth::routes();
-Route::any('/register', [
-'as' => 'register',
-function() {
-    return redirect('/login');
-    }
-]);
 
 Route::any('/logout', [
-'as' => 'logout',
-function() {
-    auth()->logout();
-    return redirect('/');
+    'as' => 'logout',
+    function () {
+        auth()->logout();
+        return redirect('/');
     }
 ]);
 
 Route::any('/home', [
-'as' => 'home',
-function() {
-    return view('welcome');
+    'as' => 'home',
+    function () {
+        return view('welcome');
     }
 ]);
 
@@ -64,8 +57,8 @@ function() {
  * hitting submit button.
  */
 Route::post('/createarticle', [
-    'uses'  => 'ArticleController@articleCreateArticle',
-    'as'    => 'article.create'
+    'uses' => 'ArticleController@articleCreateArticle',
+    'as' => 'article.create'
 ]);
 
 
@@ -74,9 +67,9 @@ Route::post('/createarticle', [
  * hitting delete button.
  */
 Route::get('/delete-article/{article_id}', [
-    'uses'          => 'ArticleController@deleteArticle',
-    'as'            => 'article.delete',
-    'middleware'    => 'auth'
+    'uses' => 'ArticleController@deleteArticle',
+    'as' => 'article.delete',
+    'middleware' => 'auth'
 ]);
 
 

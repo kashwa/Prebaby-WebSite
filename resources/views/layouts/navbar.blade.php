@@ -4,7 +4,7 @@
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       @guest
-        <a href="{{ route('login') }}" class="w3-bar-item w3-button" style="color:#0f7e9b"><i class="fa fa-user"></i> <strong>Login as admin</strong></a>
+        <a href="{{ route('login') }}" class="w3-bar-item w3-button" style="color:#0f7e9b"><i class="fa fa-user"></i> <strong>Login</strong></a>
         @else
                                 
             <a href="{{ route('logout') }}"

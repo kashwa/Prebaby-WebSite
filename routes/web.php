@@ -20,18 +20,7 @@ Route::group(['middleware' => ['web']], function () {
 // route to trimesters pages'
 // First - Second - Third.
 
-Route::get('/first', [
-    'uses' => 'ArticleController@index1'
-]);
-
-Route::get('second', [
-    'uses' => 'ArticleController@index2'
-
-]);
-
-Route::get('third', [
-    'uses' => 'ArticleController@index3'
-]);
+Route::get('articles/{id}', 'ArticleController@index');
 
 
 Auth::routes();

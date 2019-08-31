@@ -41,24 +41,33 @@ class ArticleController extends Controller
     }
 
     /**
-     * Logic to Read all articles,
-     * load each article to its location.
+     * Logic to Read all articles.
+     *
+     * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View|null
      */
+    public function index($id){
+        switch ($id){
+            case (1):
+                $articles = $this->articleRepository->findAll($id);
+                return view('firstArticles', ['articles' => $articles]);
+                break;
 
-    public function index1(){
-        $articles = Article::where('trimester',1)->get();
-        return view('firstArticles', ['articles' => $articles]);
+            case(2):
+                $articles = $this->articleRepository->findAll($id);
+                return view('secondArticles', ['articles' => $articles]);
+                break;
+
+            case(3):
+                $articles = $this->articleRepository->findAll($id);
+                return view('thirdArticles', ['articles' => $articles]);
+                break;
+
+            default:
+                return null;
+        }
     }
 
-    public function index2(){
-        $articles = Article::where('trimester',2)->get();
-        return view('secondArticles', ['articles' => $articles]);
-    }
-
-    public function index3(){
-        $articles = Article::where('trimester',3)->get();
-        return view('thirdArticles', ['articles' => $articles]);
-    }
 
     /**
      * Logic to Get rid of articles.

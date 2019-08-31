@@ -13,7 +13,7 @@
           <h2 class="w3-wide">View Articles for first Trimester</h2>
         </li>
         <li class="w3-light-grey w3-padding-24">
-        <a href="/first"><button class="w3-button w3-black w3-padding-large">Go</button></a>
+        <a href="/articles/1"><button class="w3-button w3-black w3-padding-large">Go</button></a>
         </li>
       </ul>
     </div>
@@ -25,7 +25,7 @@
           <h2 class="w3-wide">View Articles for Second Trimester</h2>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <a href="/second"><button class="w3-button w3-black w3-padding-large">Go</button></a>
+          <a href="/articles/2"><button class="w3-button w3-black w3-padding-large">Go</button></a>
         </li>
       </ul>
     </div>
@@ -36,7 +36,7 @@
           <h2 class="w3-wide">View Articles for Third Trimester</h2>
         </li>
         <li class="w3-light-grey w3-padding-24">
-          <a href="/third"><button class="w3-button w3-black w3-padding-large">Go</button></a>
+          <a href="/articles/3"><button class="w3-button w3-black w3-padding-large">Go</button></a>
         </li>
       </ul>
     </div>

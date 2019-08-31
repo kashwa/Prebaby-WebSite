@@ -12,9 +12,11 @@ class ArticleRepository
         $this->article = new Article();
     }
 
-    function findAll()
+    function findAll($id)
     {
-        //
+        $articles = Article::where('trimester',$id)->get();
+
+        return $articles;
     }
 
     function find($id)

@@ -44,8 +44,15 @@ class ArticleRepository
         //
     }
 
-    function destroy()
+    function destroy($article_id)
     {
-        //
+        $bool = true;
+        $article = Article::where('id', $article_id)->first();
+        if($article){
+            $article->delete();
+            return $bool;
+        }
+        else
+            return !$bool;
     }
 }

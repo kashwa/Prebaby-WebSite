@@ -75,10 +75,12 @@ class ArticleController extends Controller
      */
     public function deleteArticle($article_id){
         
-        $article = Article::where('id', $article_id)->first();
-        $article->delete();
-        return Redirect()->back()->with('success', 'Deleted');
-
+        if($this->articleRepository->destroy($article_id)){
+            return Redirect()->back()->with('success', 'Deleted');
+        }
+        else{
+            return Redirect()->back()->with('error', 'Not Found');
+        }
     }
 
 
